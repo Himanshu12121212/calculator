@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPLE CALCULATOR</title>
+</head>
+<style>
+    input {
+        line-height: 2;
+        width: 250px;
+        font-size: 20px;
+    }
+
+    #main {
+        width: 258px;
+        height: 400px;
+
+        position: absolute;
+    }
+
+    .A {
+        background-color: rgb(150, 154, 154);
+
+        width: 60px;
+        height: 50px;
+        text-align: center;
+        font-size: 25px;
+
+        border: none;
+    }
+
+    .ANS {
+        margin-top: 50px;
+
+    }
+</style>
+
+<body>
+    <script>
+        //Addition//
+        function add() {
+            let val1 = parseInt(document.getElementById("text1").value);
+            let val2 = parseInt(document.getElementById("text2").value);
+            let ans = document.getElementById( "Ans");
+            ans.value = val1 + val2;
+        }
+        //	Subtraction//
+        function sub() {
+            var v1 = parseInt(document.getElementById("text1").value);
+            var v2 = parseInt(document.getElementById("text2").value);
+            var ans = document.getElementById("Ans");
+            ans.value = v1 - v2;
+        } 
+        
+        //Multiplication//
+        function mul() {
+            var v1 = parseInt(document.getElementById("text1").value);
+            var v2 = parseInt(document.getElementById("text2").value);
+            var ans = document.getElementById("Ans");
+            ans.value = v1 * v2;
+        }
+        //	Division//
+        function div() {
+            var v1 = parseInt(document.getElementById("text1").value);
+            var v2 = parseInt(document.getElementById("text2").value);
+            var ans = document.getElementById("Ans");
+            ans.value = v1 / v2;
+        } l
+        //	squre//
+
+        function squre() {
+            let v1 = parseInt(document.getElementById("text1").value);
+
+            let ans = document.getElementById("Ans");
+            let b = 2;
+            ans.value = v1 ** b;
+        }
+        //	cube//
+        function cube() {
+            let v1 = parseInt(document.getElementById("text1").value);
+
+            let ans = document.getElementById("Ans");
+            let b = 3;
+            ans.value = v1 ** b;
+            let a = himasnu  
+            do 
+        }
+        //	percentgae//
+        function per() {
+            let v1 = parseInt(document.getElementById("text1").value);
+            var v2 = parseInt(document.getElementById("text2").value);
+            let ans = document.getElementById("Ans");
+
+            ans.value = v1 * v2 / 100;
+        }
+        //	x10//
+        function xx() {
+            let v1 = parseInt(document.getElementById("text1").value);
+
+            let ans = document.getElementById("Ans");
+            let b = 10;
+            ans.value = v1**b;
+        }
+
+
+
+
+    </script>
+
+
+
+
+
+
+    <div id="main">
+        <table>
+            <tr>
+                <input type="text" id="text1">
+                <input type="text" id="text2">
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" class="A" id="rest" value="A/c">
+                </td>
+                <TD>
+                    <input type="button" class="A" id="sub" value="+" onclick="add()">
+                </TD>
+
+                <td>
+                    <input type="button" class="A" id="mul" value="*" onclick="mul()">
+                </td>
+                <td>
+                    <input type="button" class="A" id="div" value="/" onclick="div()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" class="A" id="sub" value="-" onclick="sub()">
+                </td>
+
+            <tr>
+                <td>
+                    <input type="button" class="A" id="squre" value="X2" onclick="squre()">
+                </td>
+                <td>
+                    <input type="button" class="A" id="cube" value="X3" onclick="cube()">
+                </td>
+                <td>
+                    <input type="button" class="A" id="x10" value="X10" onclick="xx()">
+                </td>
+                <td>
+                    <input type="button" class="A" id="percentage" value="%" onclick="per()">
+
+                </td>
+            </tr>
+
+            </tr>
+
+
+        </table>
+        <div class="ANS"> <input type="text" id="Ans"></div>
+
+
+
+</body>
+
+</html>
